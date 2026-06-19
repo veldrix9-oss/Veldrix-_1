@@ -1,0 +1,33 @@
+{
+  "name": "Veldrix_1",
+  "description": "Advanced WhatsApp bot by Quillian – powered by Veldrix",
+  "repository": "https://github.com/veldrix9-oss/Veldrix_1",
+  "logo": "https://files.catbox.moe/bkuj17.jpg",
+  "keywords": ["bot", "whatsapp", "Veldrix", "Baileys", "whatsapp-bot"],
+  "env": {
+    "SESSION": {
+      "description": "Your WhatsApp session ID (leave empty for pairing code)",
+      "required": false
+    },
+    "OWNER_NUMBER": {
+      "description": "Your phone number with country code (no +). Example: 255748529340",
+      "required": true
+    },
+    "DEVICE_MODE": {
+      "description": "Android or iPhone (choose Android for full features)",
+      "value": "Android",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Command prefix (default: !)",
+      "value": "!",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-24"
+}
